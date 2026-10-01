@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>For My Bestie ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Loading screen -->
+
+  <div id="loader">
+
+    <div class="loader-bear">🧸</div>
+
+    <p>Preparing something for you...</p>
+
+    <div class="loading-line">
+      <span></span>
+    </div>
+
+  </div>
+
+
+  <!-- Music toggle -->
+
+  <button class="music-toggle" id="musicToggle">
+    ♫
+  </button>
+
+
+  <!-- Floating decorations -->
+
+  <div class="floating-heart heart1">♡</div>
+  <div class="floating-heart heart2">♡</div>
+  <div class="floating-heart heart3">✦</div>
+  <div class="floating-heart heart4">♡</div>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero">
+
+    <div class="hero-stars">
+      ✦　˚　✧　˚　✦
+    </div>
+
+
+    <div class="bear-wrap">
+
+      <div class="ear ear-left"></div>
+      <div class="ear ear-right"></div>
+
+      <div class="bear-face">
+
+        <span class="bear-eye eye-left">•</span>
+        <span class="bear-eye eye-right">•</span>
+
+        <span class="bear-nose">ᴗ</span>
+
+        <span class="bear-cheek cheek-left">♡</span>
+        <span class="bear-cheek cheek-right">♡</span>
+
+      </div>
+
+    </div>
+
+
+    <p class="eyebrow">
+      A LITTLE INTERNET SURPRISE
+    </p>
+
+
+    <h1>
+      For My<br>
+      <em>Favorite Bestie</em>
+      <span class="pink-heart">♡</span>
+    </h1>
+
+
+    <p class="hero-description">
+      Since I can't send you a real care package,
+      I made you a tiny corner of the internet instead. 🥹
+    </p>
+
+
+    <button class="main-button" onclick="startJourney()">
+      Open your surprise
+      <span>↓</span>
+    </button>
+
+
+    <div class="tiny-scroll">
+      scroll down, bestie ♡
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= GIFT SECTION ================= -->
+
+  <section class="gift-section" id="gifts">
+
+    <div class="section-heading">
+
+      <div class="heading-icon">
+        🎀
+      </div>
+
+      <p class="eyebrow">
+        STEP ONE
+      </p>
+
+      <h2>
+        Your Bestie<br>
+        Emergency Kit
+      </h2>
+
+      <p>
+        Tap the little cards.
+        I hid tiny surprises inside. 👀
+      </p>
+
+    </div>
+
+
+    <div class="gift-grid">
+
+
+      <!-- HUG -->
+
+      <div class="gift-card pink-card" onclick="openGift(this, 'hug')">
+
+        <div class="card-front">
+
+          <div class="card-number">
+            01
+          </div>
+
+          <div class="card-emoji">
+            🫂
+          </div>
+
+          <h3>
+            Emergency Hug
+          </h3>
+
+          <p>
+            Open when you need one.
+          </p>
+
+          <span class="tap">
+            TAP TO OPEN ♡
+          </span>
+
+        </div>
+
+
+        <div class="card-back">
+
+          <div class="back-icon">
+            🫂
+          </div>
+
+          <h3>
+            COME HERE.
+          </h3>
+
+          <p>
+            This is your official unlimited
+            virtual hug pass.
+          </p>
+
+          <strong>
+            No expiration date. ♡
+          </strong>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- CHOCOLATE -->
+
+      <div class="gift-card cream-card" onclick="openGift(this, 'chocolate')">
+
+        <div class="card-front">
+
+          <div class="card-number">
+            02
+          </div>
+
+          <div class="card-emoji">
+            🍫
+          </div>
+
+          <h3>
+            Emergency Chocolate
+          </h3>
+
+          <p>
+            For extremely serious situations.
+          </p>
+
+          <span class="tap">
+            TAP TO OPEN ♡
+          </span>
+
+        </div>
+
+
+        <div class="card-back">
+
+          <div class="back-icon">
+            🍫
+          </div>
+
+          <h3>
+            HERE YOU GO.
+          </h3>
+
+          <p>
+            I would send you actual chocolate
+            if the internet had that feature. 😭
+          </p>
+
+          <strong>
+            *hands chocolate dramatically*
+          </strong>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- FLOWER -->
+
+      <div class="gift-card purple-card" onclick="openGift(this, 'flower')">
+
+        <div class="card-front">
+
+          <div class="card-number">
+            03
+          </div>
+
+          <div class="card-emoji">
+            🌷
+          </div>
+
+          <h3>
+            A Tiny Flower
+          </h3>
+
+          <p>
+            No special occasion needed.
+          </p>
+
+          <span class="tap">
+            TAP TO OPEN ♡
+          </span>
+
+        </div>
+
+
+        <div class="card-back">
+
+          <div class="back-icon">
+            🌷
+          </div>
+
+          <h3>
+            JUST FOR YOU.
+          </h3>
+
+          <p>
+            A tiny flower for a tiny reminder
+            that you're appreciated.
+          </p>
+
+          <strong>
+            Keep it forever. 🌷
+          </strong>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- MUSIC -->
+
+      <div class="gift-card blue-card" onclick="openGift(this, 'music')">
+
+        <div class="card-front">
+
+          <div class="card-number">
+            04
+          </div>
+
+          <div class="card-emoji">
+            🎧
+          </div>
+
+          <h3>
+            Bad Day Button
+          </h3>
+
+          <p>
+            For when everything is annoying.
+          </p>
+
+          <span class="tap">
+            TAP TO OPEN ♡
+          </span>
+
+        </div>
+
+
+        <div class="card-back">
+
+          <div class="music-bars">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
+          <h3>
+            PAUSE EVERYTHING.
+          </h3>
+
+          <p>
+            Put your headphones on.
+            Play your comfort song.
+            Take five minutes.
+          </p>
+
+          <strong>
+            The world can wait. 🌙
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= MINI MEMORY WALL ================= -->
+
+  <section class="memory-section">
+
+    <div class="section-heading">
+
+      <div class="heading-icon">
+        🧸
+      </div>
+
+      <p class="eyebrow">
+        LITTLE THINGS
+      </p>
+
+      <h2>
+        No photos needed.
+      </h2>
+
+      <p>
+        Some friendships are made of moments,
+        not pictures.
+      </p>
+
+    </div>
+
+
+    <div class="memory-wall">
+
+      <div class="memory memory-one">
+        <span>☕</span>
+        <p>
+          random conversations
+          that somehow lasted forever
+        </p>
+      </div>
+
+      <div class="memory memory-two">
+        <span>🌙</span>
+        <p>
+          talking when everyone else
+          was already asleep
+        </p>
+      </div>
+
+      <div class="memory memory-three">
+        <span>😂</span>
+        <p>
+          laughing at things that
+          probably weren't even funny
+        </p>
+      </div>
+
+      <div class="memory memory-four">
+        <span>⭐</span>
+        <p>
+          knowing that somewhere
+          there's always a familiar person
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= LETTER ================= -->
+
+  <section class="letter-section">
+
+    <div class="letter-paper">
+
+      <div class="envelope-icon">
+        💌
+      </div>
+
+      <p class="eyebrow">
+        A LETTER FOR YOU
+      </p>
+
+      <h2>
+        Hey, bestie...
+      </h2>
+
+      <div class="divider"></div>
+
+
+      <div class="letter-content">
+
+        <p>
+          I know we're not always in the same place.
+          Sometimes we're busy, sometimes we're tired,
+          and sometimes life gets completely chaotic.
+        </p>
+
+        <p>
+          But I hope you know that distance doesn't
+          make a friendship any less real.
+        </p>
+
+        <p>
+          There are people who become part of your life
+          without even being physically close to you.
+          You're one of those people.
+        </p>
+
+        <p>
+          So if you're having a terrible day,
+          feeling tired, or simply need a reminder
+          that someone cares...
+        </p>
+
+        <p class="highlight">
+          Come back here. ♡
+        </p>
+
+        <p>
+          And yes, unfortunately for you,
+          you're stuck with me.
+        </p>
+
+        <p class="signature">
+          — your annoying bestie ♡
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= REMINDERS ================= -->
+
+  <section class="reminder-section">
+
+    <div class="section-heading">
+
+      <div class="heading-icon">
+        🌷
+      </div>
+
+      <p class="eyebrow">
+        SAVE THESE
+      </p>
+
+      <h2>
+        Tiny reminders
+      </h2>
+
+    </div>
+
+
+    <div class="reminders">
+
+      <div class="reminder">
+        <div>🌷</div>
+        <p>
+          You are allowed to have bad days.
+        </p>
+      </div>
+
+      <div class="reminder">
+        <div>☕</div>
+        <p>
+          Rest is not something you have to earn.
+        </p>
+      </div>
+
+      <div class="reminder">
+        <div>⭐</div>
+        <p>
+          You don't need to have everything figured out.
+        </p>
+      </div>
+
+      <div class="reminder">
+        <div>🧸</div>
+        <p>
+          And yes... you're still my bestie.
+          No refunds.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= SURPRISE BUTTON ================= -->
+
+  <section class="surprise-section">
+
+    <div class="surprise-box">
+
+      <span class="surprise-star">
+        ✦
+      </span>
+
+      <p class="eyebrow">
+        WAIT...
+      </p>
+
+      <h2>
+        I have<br>
+        <em>one more thing</em>
+        for you.
+      </h2>
+
+      <p>
+        And this one isn't inside a box.
+      </p>
+
+      <button
+        class="surprise-button"
+        onclick="finalSurprise()">
+
+        <span>Open it</span>
+        <b>♡</b>
+
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= FINAL ================= -->
+
+  <section class="final-section">
+
+    <div class="stars">
+      ✦　⋆　✧　⋆　✦　⋆　✧
+    </div>
+
+    <div class="moon">
+      🌙
+    </div>
+
+    <p class="eyebrow light">
+      FROM MY LITTLE CORNER OF THE INTERNET
+    </p>
+
+    <h2>
+      Even from miles away...
+    </h2>
+
+    <p class="final-text">
+      you're still one of my favorite people. ♡
+    </p>
+
+    <div class="final-bear">
+      🧸
+    </div>
+
+    <div class="final-hearts">
+      ♡　♡　♡
+    </div>
+
+    <p class="footer">
+      made with pixels, friendship & a suspicious amount of emotions
+    </p>
+
+  </section>
+
+
+
+  <!-- ================= SURPRISE MODAL ================= -->
+
+  <div class="modal" id="surpriseModal">
+
+    <div class="modal-card">
+
+      <button
+        class="close-modal"
+        onclick="closeSurprise()">
+        ×
+      </button>
+
+      <div class="modal-bear">
+        🧸💗
+      </div>
+
+      <div class="modal-sparkles">
+        ✦ ˚ ✧ ˚ ✦
+      </div>
+
+      <h2>
+        You made it! 🥹
+      </h2>
+
+      <p class="modal-main">
+        Here's your final gift:
+      </p>
+
+      <p class="big-message">
+        Wherever life takes us,
+        I'm really glad our paths crossed.
+      </p>
+
+      <p class="small-message">
+        Distance may change the location...
+        <br>
+        not the friendship. ♡
+      </p>
+
+      <div class="modal-heart">
+        ♡
+      </div>
+
+      <button
+        class="close-button"
+        onclick="closeSurprise()">
+        Keep this little corner ♡
+      </button>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Confetti container -->
+
+  <div id="confetti"></div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
